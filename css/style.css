@@ -72,9 +72,9 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .intro_section {
-      width: 80%; } }
+      width: 100%; } }
   .intro_section #intro_title {
     margin-top: 60px;
     letter-spacing: 3px;
@@ -244,11 +244,11 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 1024px; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       .show_selection_wrap .show_selection {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         width: 100%; } }
   .show_selection_wrap .item_block {
     width: 450px;
