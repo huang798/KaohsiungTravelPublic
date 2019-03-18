@@ -74,7 +74,9 @@ header {
   text-align: center; }
   @media screen and (max-width: 768px) {
     .intro_section {
-      width: 100%; } }
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px; } }
   .intro_section #intro_title {
     margin-top: 60px;
     letter-spacing: 3px;
