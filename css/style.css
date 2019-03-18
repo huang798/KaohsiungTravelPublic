@@ -16,7 +16,14 @@ html, body {
   position: fixed;
   bottom: 20px;
   right: 0px;
-  z-index: 100;
+  z-index: 100; }
+
+#toTop:hover {
+  background-color: gray;
+  color: white; }
+
+#toTop.notTop {
+  opacity: 1;
   font-size: 35px;
   color: gray;
   border: solid 3px gray;
@@ -27,13 +34,6 @@ html, body {
           transition-duration: 0.2s;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); }
-
-#toTop:hover {
-  background-color: gray;
-  color: white; }
-
-.notTop {
-  opacity: 1 !important; }
 
 header {
   overflow: hidden;
