@@ -1,6 +1,6 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 * {
-  font-family: "微軟正黑體", serif;
+  font-family: 'cwTeXYen', sans-serif;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -67,7 +67,7 @@ header {
       top: 40%; } }
 
 .intro_section {
-  height: 500px;
+  height: 400px;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -80,7 +80,7 @@ header {
   .intro_section #intro_title {
     margin-top: 60px;
     letter-spacing: 3px;
-    font-family: 'Merriweather', serif; }
+    font-family: 'cwTeXYen', sans-serif; }
   .intro_section #intro_title:after {
     content: " ";
     display: block;
@@ -141,13 +141,19 @@ header {
           transform: translateX(-50%);
   padding-top: 50px;
   text-align: center;
-  position: absolute;
+  position: relative;
   z-index: 4;
-  bottom: 250px;
+  bottom: 0px;
   background-color: white;
   height: 400px;
   -webkit-box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.3); }
+          box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.3);
+  top: 0px; }
+  .recommend_selection img {
+    width: 400px; }
+    @media screen and (max-width: 768px) {
+      .recommend_selection img {
+        width: 80%; } }
   @media screen and (max-width: 1024px) and (min-width: 768px) {
     .recommend_selection {
       width: 85%;
@@ -165,10 +171,7 @@ header {
   margin-bottom: 10px; }
 
 .recommend_wrap {
-  margin-top: 70px; }
-
-#recommend_hr {
-  position: absolute; }
+  margin-top: 20px; }
 
 .btn {
   border: solid 2px #152834;
@@ -201,7 +204,16 @@ header {
   background-color: #152834;
   text-align: center;
   color: white;
-  padding-top: 400px; }
+  padding-top: 200px; }
+
+#select_zone_name {
+  top: -150px; }
+
+#selection_wrap {
+  top: -151px; }
+
+.show_selection_wrap {
+  top: -152px; }
 
 .user_select_area {
   top: 240px;
@@ -250,7 +262,9 @@ header {
       .show_selection_wrap .show_selection {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+                justify-content: space-evenly; } }
+    @media screen and (max-width: 1024px) {
+      .show_selection_wrap .show_selection {
         width: 100%; } }
   .show_selection_wrap .item_block {
     width: 450px;
@@ -326,7 +340,8 @@ header {
 footer {
   height: 100px;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  top: -152px; }
   footer img {
     height: 80px;
     left: 50%;
